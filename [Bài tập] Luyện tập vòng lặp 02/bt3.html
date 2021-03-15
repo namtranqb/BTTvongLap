@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Hien thi dialog -> cho phep nhap gia tri cua N
+    var    N =prompt('Nhap gia tri N');
+    N = parseInt(N);
+    
+	//xay dung do cao cua hinh tam giac
+	for(i=0;i<N;i++) {
+		//tao hang (row) *
+		for(j=0;j<=i;j++) {
+			document.writeln(" * ");
+		}
+		//xuong dong khi hien thi ket qua cua tung hang
+		document.writeln("<br/>");
+	}
+
+    document.writeln("<br/> <br/> <br/>");
+
+    //tam giac vuong tren_trai:
+    for(i=N -1;i >= 0;i --) {
+		for(j=i;j>=0;j--) {
+			document.writeln(" * ");
+		}
+		document.writeln("<br/>");
+	}
+
+    document.writeln("<br/> <br/> <br/>");
+    //tam giac vuong duoi_phai:
+    
+
+
+    </script>
+    <div style ="margin-right: 90%; text-align: right;">
+        <script>
+            for(i=0;i<N;i++) {
+                //tao hang (row) *
+                for(j=0;j<=i;j++) {
+                    document.writeln(" * ");
+                }
+                //xuong dong khi hien thi ket qua cua tung hang
+                document.writeln("<br/>");
+            }
+            document.writeln("<br/> <br/> <br/>");
+
+            //tam giac vuong tren_trai:
+            for(i=N -1;i >= 0;i --) {
+                for(j=i;j>=0;j--) {
+                    document.writeln(" * ");
+                }
+                document.writeln("<br/>");
+            }
+
+        </script>
+    </div>
+</body>
+</html>
